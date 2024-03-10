@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img src="./assets/images/avtar.png" alt="Nitin" width="80" />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Nitin">Nitin</h1>
+
+            <p class="title">MERN developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:nit8948@gmail.com" class="contact-link"
+                  >nit8948@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:7419067524" class="contact-link">+91 7419067524</a>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="2002-04-06">April 06, 2002</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Panipat, Haryana, INDIA</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/nitin-93a0b2257"
+                class="social-link"
+              >
+                <ion-icon class="socials-icons" name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://github.com/Nitin1406" class="social-link">
+                <ion-icon class="socials-icons" name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://www.websire.in/" class="social-link">
+                <ion-icon
+                  class="socials-icons"
+                  name="Websire"
+                ></ion-icon>
+              </a>
+            </li>
+
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon class="socials-icons" name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/websire.in?igsh=MTdkY2Y5NHBxaDlxZw=="
+                class="social-link"
+              >
+                <ion-icon
+                  class="socials-icons"
+                  name="logo-instagram"
+                ></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+           
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Welcome to Nitin's Creative Studio! I'm a seasoned Creative Director and UI/UX Designer based in Panipat,
+              India, with a passion for crafting visually appealing websites and captivating video content. With expertise in web development,
+              design, and SEO optimization, I excel in delivering functional solutions tailored to your needs.
+            </p>
+
+            <p>
+              My approach is rooted in adding a personal touch to every project,
+              ensuring seamless user experiences that capture attention. Whether you're a startup,
+              small business, or established enterprise, I'm dedicated to amplifying your message and identity through
+              innovative design solutions. Let's collaborate to bring your vision to life and make a lasting impact online.
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web design</h4>
+
+                  <p class="service-item-text">
+                    The most modern and high-quality design made at a
+                    professional level.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
+
+                  <p class="service-item-text">
+                    High-quality development of sites at the professional level.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-back.svg"
+                    alt="backend icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Backend Developement</h4>
+
+                  <p class="service-item-text">
+                    Professional development of complex bussiness logic.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-photo.svg"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Video Editing</h4>
+
+                  <p class="service-item-text">
+                    I edit high-quality video of any category at a professional
+                    level.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - Experience
+        -->
+
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimonials</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="Ravi"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Ravi
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      "We entrusted Nitin with the development of our cab startup's website, and we couldn't be more thrilled with the outcome.
+                       His extensive expertise in web design is evident in every element of the site. Nitin's meticulous attention to detail and dedication to grasping the specific requirements of our venture were truly remarkable.
+                       We wholeheartedly endorse his services to anyone seeking a professional touch in their online presence."
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials modal
+        -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Ravi"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                <time datetime="2021-06-14">22 May, 2023</time>
+
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!--
+          - clients
+        -->
+
+          <section class="clients">
+            <h3 class="h3 clients-title">Tech Stack & Tools</h3>
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/logo-1.png" alt="client logo" />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/logo-2.png" alt="client logo" />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/logo-3.png" alt="client logo" />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/logo-4.png" alt="client logo" />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/logo-5.png" alt="client logo" />
+                </a>
+              </li>
+              
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/logo-9.png" alt="client logo" />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  University Institute of Engineering & Technology, Kurukshetra
+                </h4>
+                <span>2020 — 2024</span>
+                <p class="timeline-text">
+                  Currently pursuing a Bachelor's degree in Engineering at
+                  University Institute of Engineering & Technology, Kurukshetra with a notable
+                  CGPA of 8.4. Actively engaging in coursework related to
+                  engineering disciplines, and participating in hands-on
+                  projects to apply theoretical knowledge.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Shri Guru Ram Dass Senior Secondary School, Model Town, Panipat
+                </h4>
+                <span>2019 — 2020</span>
+                <p class="timeline-text">
+                  Completed 12th grade as a PCM student at Shri Guru Ram Dass Senior Secondary School
+                  with an impressive score of 84%. Excelled
+                  in Physics, Chemistry, and Mathematics, showcasing a strong
+                  aptitude for scientific subjects.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title"> Shri Guru Ram Dass Senior Secondary School, Model Town, Panipat</h4>
+                <span>2017 — 2018</span>
+                <p class="timeline-text">
+                  Successfully completed 10th grade education at Shri Guru Ram Dass Senior Secondary School
+                   with a commendable score of 89%. Engaged in
+                  extracurricular activities alongside academics, showcasing a
+                  well-rounded approach to education.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Lupleg (Software Engineer Intern)
+                </h4>
+
+                <span>Feb 2024 - Present</span>
+
+                <p class="timeline-text">
+                  "Revamped and optimized the user interface of MeriMed platform, with a strong focus on essential
+                  features like the cart, product showcase, and login/signup pages. Leveraged cutting-edge web
+                  technologies such as the MERN stack (MongoDB, Express.js, React.js, Node.js) to deliver dynamic
+                  and responsive user interfaces. Through hands-on experience with React.js and Redux, deepened
+                  expertise in frontend development, while contributing to the seamless user experience and overall functionality of the platform."
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Prodigy Infotech (Web Development Intern)
+                </h4>
+
+                <span>September 01, 2023 — September 30, 2023</span>
+
+                <p class="timeline-text">
+                  During my internship, I developed projects like a Stopwatch,
+                  Unit Converter, and a Whether App. I mastered Tailwind CSS
+                  for compelling UI development. Specializing in HTML, CSS,
+                  and JavaScript
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Coding Ninjas (Campus Ambassador)
+                </h4>
+
+                <span>June 2023 — October 2023</span>
+
+                <p class="timeline-text">
+                  "Served as a Campus Ambassador for Coding Ninjas, promoting their educational programs and organizing
+                   events to engage the university community. Utilized social media and networking to amplify outreach and
+                   collaborated with the marketing team to tailor strategies.
+                   Strengthened communication and leadership skills while fostering coding culture on campus."
+                </p>
+              </li>
+
+              
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Certifications & Acheivements</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Backend Development 
+                </h4>
+                <a
+                  href="https://learn.pwskills.com/certificate/2d876997-3ceb-4214-999f-3d53448b4268"
+                  class="social-link"
+                >
+                  <span>PW Skills</span>
+                </a>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Python for Data Science and AI</h4>
+                <a
+                  href="https://www.credly.com/badges/0df830bd-0c57-4613-8959-05002970b350/public_url"
+                  class="social-link"
+                >
+                  <span>Coursera (IBM) - Badge</span>
+                </a>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Databases and SQL for Data Science
+                </h4>
+                <a
+                  href="https://www.credly.com/badges/406c041a-32b7-4697-9b7d-da35a4e6ce31/public_url"
+                  class="social-link"
+                >
+                  <span>Coursera (IBM) - Badge</span>
+                </a>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Data Analysis with Python
+                </h4>
+                <a
+                  href="https://www.credly.com/badges/f649096d-2b43-44f1-9454-bb26c97b1120/public_url"
+                  class="social-link"
+                >
+                  <span>Coursera (IBM) - Badge </span>
+                </a>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Data Visualization with Python
+                </h4>
+                <a
+                  href="https://www.credly.com/badges/3069cb64-f3f8-4f15-aa4a-254552faa1f0/public_url"
+                  class="social-link"
+                >
+                  <span>Coursera (IBM) - Badge</span>
+                </a>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Web Developement Bootcamp
+                </h4>
+                <a
+                  href="#"
+                  class="social-link"
+                >
+                  <span>Code Help</span>
+                </a>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Programming with Python
+                </h4>
+                <a
+                  href="https://drive.google.com/file/d/19t74rVBLqAIJERA9w3-wD_ZGHHjLbCU-/view?usp=sharing"
+                  class="social-link"
+                >
+                  <span>InternShala</span>
+                </a>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web Developement</h5>
+                  <data value="98">98%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 98%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Data Structure & Algorithm</h5>
+                  <data value="90">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web design</h5>
+                  <data value="85">85%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Graphic design</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Video Editing</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Machine Learning</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <a
+            href="https://drive.google.com/file/d/1RVFwN1KXIGDQf7IJaUhBCQjV-qz6Mrk3/view?usp=sharing"
+            class="resume-btn-container"
+          >
+            <button class="resume-btn">
+              <i
+                class="fa fa-file-text-o"
+                style="font-size: 25px; color: rgb(254, 206, 104)"
+              ></i>
+              <span>Resume Doc</span>
+            </button>
+          </a>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              
+
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Graphics Design</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://nitin1406.github.io/Weather-Webapp/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Weather webapp.png"
+                      alt="Weather webapp"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Weather Webapp</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="http://uniquecab.in/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/uniquecab.png"
+                      alt="uniqueCab"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Unique Cab ( Freelance )</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://crypto-hunter.netlify.app/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/CryptoHunter.png"
+                      alt="crypto-hunter"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Crypto-Hunter</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://nitin1406.github.io/Tic-Tac-Toe/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/Tic-Tac-Toe.png"
+                      alt="Tic-Tac-Toe"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Tic Tac Toe</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://apiv3-youtube-clone.netlify.app/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/YouTube.png"
+                      alt="to-do-list2"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">YouTube-Clone</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Ai"
+              >
+                <a
+                  href="https://starlit-conkies-44c625.netlify.app/"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/port.png"
+                      alt="portfolio"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Intro Web</h3>
+
+                  <p class="project-category">Web Development</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111235.52235320772!2d76.88171935493973!3d29.39633586004691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390dda457afbe651%3A0x41d3f6feacaa74d4!2sPanipat%2C%20Haryana!5e0!3m2!1sen!2sin!4v1709994643780!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="mailto:nit8948@gmail.com" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
